@@ -1,5 +1,6 @@
 """
 Calculator - A simple calculator to do basic operators.
+eval takes in string as parameters and evaluates the result of the expression.
 """
 
 if __name__ == '__main__':
@@ -9,8 +10,8 @@ if __name__ == '__main__':
     except:
         print 'Invalid input'
     else:
-        op = raw_input("Operation (+, -, /, *): ")
-        if op not in '+-/*':
+        op = raw_input("Operation (+, -, /, *, //): ")
+        if op not in '+-/*//':
             print "Invalid operator"
         else:
             print "%d %s %d = %d" % \
